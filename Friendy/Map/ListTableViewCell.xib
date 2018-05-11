@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" rowHeight="84" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="Friendy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:MM:SS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCg-5b-llF">
+                        <rect key="frame" x="215" y="12" width="100" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TCg-5b-llF" secondAttribute="height" multiplier="50:9" id="lvS-U3-28W"/>
+                            <constraint firstAttribute="width" constant="100" id="tWA-9e-3zz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-lx-vO2">
+                        <rect key="frame" x="68" y="12" width="147" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat3" translatesAutoresizingMaskIntoConstraints="NO" id="Wla-im-jaX">
+                        <rect key="frame" x="8" y="12" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="71x-y2-EaY"/>
+                            <constraint firstAttribute="width" constant="48" id="LE9-Er-5ta"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="1" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxx@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MZ-iq-QVA">
+                        <rect key="frame" x="68" y="42" width="147" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TCg-5b-llF" firstAttribute="top" secondItem="Wla-im-jaX" secondAttribute="top" id="1DH-LW-9td"/>
+                    <constraint firstItem="1MZ-iq-QVA" firstAttribute="leading" secondItem="Wla-im-jaX" secondAttribute="trailing" constant="12" id="8IB-82-3HH"/>
+                    <constraint firstItem="TCg-5b-llF" firstAttribute="leading" secondItem="GmV-lx-vO2" secondAttribute="trailing" id="F37-fk-Pu1"/>
+                    <constraint firstItem="Wla-im-jaX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UFe-St-bDh"/>
+                    <constraint firstItem="GmV-lx-vO2" firstAttribute="leading" secondItem="Wla-im-jaX" secondAttribute="trailing" constant="12" id="Wzk-Ex-lF4"/>
+                    <constraint firstItem="1MZ-iq-QVA" firstAttribute="bottom" secondItem="Wla-im-jaX" secondAttribute="bottom" id="X4X-D9-PRC"/>
+                    <constraint firstItem="Wla-im-jaX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZYK-KH-b4B"/>
+                    <constraint firstItem="GmV-lx-vO2" firstAttribute="top" secondItem="Wla-im-jaX" secondAttribute="top" id="aSD-CJ-DX1"/>
+                    <constraint firstItem="1MZ-iq-QVA" firstAttribute="trailing" secondItem="GmV-lx-vO2" secondAttribute="trailing" id="brX-cq-8LM"/>
+                    <constraint firstAttribute="trailing" secondItem="TCg-5b-llF" secondAttribute="trailing" constant="5" id="gVd-rc-cYW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="1MZ-iq-QVA" id="tyM-zR-tZN"/>
+                <outlet property="namelabel" destination="GmV-lx-vO2" id="i6A-Nf-0Go"/>
+                <outlet property="profileImageView" destination="Wla-im-jaX" id="9Xs-DW-whi"/>
+                <outlet property="timeLabel" destination="TCg-5b-llF" id="tjF-0y-CXX"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="41"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cat3" width="1152" height="1613"/>
+    </resources>
+</document>

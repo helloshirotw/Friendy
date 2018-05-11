@@ -1,0 +1,143 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.31.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.31.0):
+    - FBSDKCoreKit
+  - Firebase/Auth (4.10.0):
+    - Firebase/Core
+    - FirebaseAuth (= 4.4.4)
+  - Firebase/Core (4.10.0):
+    - FirebaseAnalytics (= 4.1.0)
+    - FirebaseCore (= 4.0.16)
+  - Firebase/Database (4.10.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.1.5)
+  - Firebase/Storage (4.10.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.1.3)
+  - FirebaseAnalytics (4.1.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (4.4.4):
+    - FirebaseAnalytics (~> 4.1)
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (4.0.16):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (4.1.5):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (2.0.9):
+    - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.1.3):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
+  - GoogleToolboxForMac/DebugUtils (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
+  - GTMSessionFetcher/Core (1.1.14)
+  - LBTAComponents (1.0.2)
+  - leveldb-library (1.20)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - PKHUD (5.0.0)
+  - SwiftyJSON (4.0.0)
+  - TRON (4.1.2):
+    - Alamofire (~> 4.5)
+    - TRON/SwiftyJSON (= 4.1.2)
+  - TRON/Core (4.1.2):
+    - Alamofire (~> 4.5)
+  - TRON/SwiftyJSON (4.1.2):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0)
+    - TRON/Core
+
+DEPENDENCIES:
+  - FBSDKLoginKit
+  - Firebase/Auth
+  - Firebase/Database
+  - Firebase/Storage
+  - GoogleMaps
+  - GooglePlaces
+  - LBTAComponents
+  - PKHUD
+  - TRON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - FirebaseStorage
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - LBTAComponents
+    - leveldb-library
+    - nanopb
+    - PKHUD
+    - SwiftyJSON
+    - TRON
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 54db4c581123745d25a9f7c1608020b3aeabd118
+  FBSDKLoginKit: 95a252ddffd6919c0f132a02292f0824616d8709
+  Firebase: c98c8b1fbcbdccd82539a36c2b17a9b1bb0ee798
+  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
+  FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
+  FirebaseCore: eb9e1a56733ff1094ecf3e28af9069c344b25239
+  FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
+  FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
+  FirebaseStorage: 9a863a2bb96c406958eeff7c2f1dfa9f44c44a13
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
+  LBTAComponents: c4c8863e0ef6715e378300db148b96a09df656f7
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TRON: eafd3cfd30d264f7c775d0ac3a6cc5650bfd603a
+
+PODFILE CHECKSUM: f18e9791a235640ce1ab8f9b7b17c5d6aed92f16
+
+COCOAPODS: 1.5.0
